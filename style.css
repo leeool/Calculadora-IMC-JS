@@ -78,10 +78,12 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 100px;
-  border-radius: 2px;
+  padding: 30px 30px;
+  width: 300px;
+  border-radius: 4px;
   font-size: 1.6rem;
   transition: 0.3s top;
+  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.53);
 }
 
 .popup img {
@@ -96,10 +98,18 @@ h1 {
   top: 50%;
 }
 
-.resultado {
+.resultado,
+.imc-info {
   color: black;
-  font-weight: 600;
   text-align: center;
+}
+
+.resultado {
+  font-weight: 600;
+}
+
+.imc-info {
+  font-size: 1.2rem;
 }
 
 .d-none {
@@ -107,7 +117,7 @@ h1 {
 }
 
 .bg-black {
-  background-color: #00000049;
+  background-color: rgba(0, 0, 0, 0.5);
   height: 100vh;
   width: 100vw;
   position: absolute;
